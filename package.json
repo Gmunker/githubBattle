@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --open",
-    "build": "SET NODE_ENV=production & webpack -p"
+    "build": "SET NODE_ENV=production & webpack -p",
+    "github": "git push origin master",
+    "heroku": "git push heroku master"
   },
   "babel": {
     "presets": [
@@ -28,6 +30,7 @@
   },
   "dependencies": {
     "axios": "^0.16.1",
+    "express": "^4.15.3",
     "prop-types": "^15.5.10",
     "query-string": "^4.3.4",
     "react": "^15.5.4",
