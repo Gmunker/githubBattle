@@ -7,7 +7,7 @@
     "dev": "webpack-dev-server --open",
     "build": "SET NODE_ENV=production & webpack -p",
     "github": "git push origin master",
-    "heroku": "git push heroku master"
+    "start": "node server.js"
   },
   "babel": {
     "presets": [
