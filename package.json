@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --open",
-    "build": "SET NODE_ENV=production & webpack -p",
-    "github": "git push origin master",
+    "build": "SET NODE_ENV='production' && webpack -p",
     "start": "node server.js"
   },
   "babel": {
