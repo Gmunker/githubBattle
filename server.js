@@ -12,7 +12,7 @@ app.use((req, res, next) => {
 
   app.use(express.static(__dirname + '/dist'));
   app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, './dist', 'index.html'));
+    res.sendFile(path.join(__dirname, 'index.html'));
   });
   
   app.listen( process.env.PORT || 3000, () => {
