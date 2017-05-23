@@ -5,6 +5,7 @@ import PropTypes from 'prop-types';
 
 import api from '../utils/api';
 import PlayerPreview from './PlayerPreview';
+import Loading from './Loading';
 
 const Profile = (props) => {
   let { info } = props;
@@ -88,7 +89,7 @@ export default class Results extends Component {
   render() {
     let { error, winner, loser, loading } = this.state;
     if (loading === true) {
-      return <p>Loading...</p>
+      return <Loading />
     }
 
     if (error) {
