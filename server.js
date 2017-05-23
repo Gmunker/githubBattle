@@ -16,5 +16,5 @@ app.use((req, res, next) => {
   });
   
   app.listen(process.env.PORT || 3000, function () {
-	console.log('Express server is up on port ' + PORT);
+	console.log('Express server is up on port ' + process.env.PORT || 3000);
 });
